@@ -1,10 +1,8 @@
 ﻿//Ref : https://studysection.com/blog/lazy-loading-in-c/
 
-
-
 Customer obj = new Customer();
 Console.WriteLine(obj.CustName);
-foreach (Order or in obj.orders())  // by using Lazy loading method we are abale to load data when we required
+foreach (Order or in obj.Orders)  
 {
     Console.WriteLine(or.Name);
 }
@@ -12,20 +10,19 @@ Console.ReadLine();
 
 public class Customer
 {
-    private List<Order> _orders = null;
+    private Lazy<List<Order>> _orders = null;
     public string CustName;
+    public List<Order> Orders
+    {
+        get
+        {
+            return _orders.Value;
+        }
+    }
     public Customer()
     {
         CustName = "abc";
-    }
-    public List<Order> orders()
-    {
-        if (_orders == null)
-        {
-            _orders = LoadOrders();
-        }
-        return _orders;
-
+        _orders = new Lazy<List<Order>>(()=>LoadOrders());
     }
     private List<Order> LoadOrders()
     {

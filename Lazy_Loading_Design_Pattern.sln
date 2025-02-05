@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithOut_Lazy_Loading", "WithOut_Lazy_Loading\WithOut_Lazy_Loading.csproj", "{FD05A859-1DD8-43DD-B9D1-0146F4B9AB7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "With_Lazy_Loading", "With_Lazy_Loading\With_Lazy_Loading.csproj", "{1B724F92-D232-4AEA-98A5-DD62ED706E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "With_Lazy_Keyword_Exp", "With_Lazy_Keyword_Exp\With_Lazy_Keyword_Exp.csproj", "{ABED1FB1-10FC-4B3C-BC14-2F22813FAE2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1B724F92-D232-4AEA-98A5-DD62ED706E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B724F92-D232-4AEA-98A5-DD62ED706E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B724F92-D232-4AEA-98A5-DD62ED706E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABED1FB1-10FC-4B3C-BC14-2F22813FAE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABED1FB1-10FC-4B3C-BC14-2F22813FAE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABED1FB1-10FC-4B3C-BC14-2F22813FAE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABED1FB1-10FC-4B3C-BC14-2F22813FAE2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

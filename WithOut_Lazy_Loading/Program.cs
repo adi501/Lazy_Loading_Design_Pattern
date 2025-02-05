@@ -1,5 +1,6 @@
-﻿
-Customer obj=new Customer();  // when we create object for Customer . it's loading CustName & Orders. but in this case we  are not required 
+﻿//Ref : https://studysection.com/blog/lazy-loading-in-c/
+
+Customer obj =new Customer();  // when we create object for Customer . it's loading CustName & Orders. but in this case we  are not required 
                               // order details but still it's loading order details to solve this probem we can use Lazy loading method
 Console.WriteLine(obj.CustName);
 
